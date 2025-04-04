@@ -1,23 +1,20 @@
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useState, useEffect } from "react";
 
 const images = [
-  'https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-  'https://ethiccraft.org/assets/img/home-slider/New_Banner.png?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-  'https://ethiccraft.org/assets/img/home-slider/slider1.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-  'https://ethiccraft.org/assets/img/home-slider/quate.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+  "https://ethiccraft.org/assets/img/home-slider/New_Banner.png?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "https://ethiccraft.org/assets/img/home-slider/slider1.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "https://ethiccraft.org/assets/img/home-slider/quate.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
 ];
 
 const ImageSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Automatic sliding
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Slide every 4 seconds
-
-    return () => clearInterval(timer); // Cleanup on unmount
+    }, 5000);
+    return () => clearInterval(timer);
   }, []);
 
   const goToPrevious = () => {
@@ -31,63 +28,43 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="relative h-[600px] mt-16 overflow-hidden">
-      {/* Slider Container */}
-      <div
-        className="flex h-full transition-transform duration-700 ease-in-out"
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-      >
+    <div className="relative w-full mt-[64px] overflow-hidden">
+      <div className="flex transition-transform duration-700 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {images.map((image, index) => (
-          <div key={index} className="min-w-full h-full relative">
+          <div key={index} className="min-w-full flex justify-center items-center">
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="w-full h-full object-cover"
+              className="w-full h-auto object-contain"
             />
-            {/* Inspirational Text, Subtitle, and Button on First Image */}
-            {index === 0 && (
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/20">
-                <h2 className="text-4xl md:text-5xl font-extrabold mb-4 animate-fade-in-down">
-                  Making a Difference Together
-                </h2>
-                <p className="text-lg md:text-xl font-light max-w-md text-center mb-6 animate-fade-in-up">
-                  Unite for a brighter future-empower, uplift, and inspire change.
-                </p>
-                <button className="bg-emerald-600 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-emerald-700 transition-all duration-300 transform hover:scale-105 animate-fade-in-up">
-                  Let's Dive in
-                </button>
-              </div>
-            )}
           </div>
         ))}
       </div>
 
-      {/* Previous Button */}
+      {/* Arrows */}
       <button
         onClick={goToPrevious}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 p-3 rounded-full shadow-md hover:bg-white transition-colors"
+        className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 text-white text-opacity-80 hover:text-opacity-100 transition-all z-10"
       >
-        <ChevronLeft size={24} className="text-gray-800" />
+        <ChevronLeft size={32} />
       </button>
-
-      {/* Next Button */}
       <button
         onClick={goToNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 p-3 rounded-full shadow-md hover:bg-white transition-colors"
+        className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 text-white text-opacity-80 hover:text-opacity-100 transition-all z-10"
       >
-        <ChevronRight size={24} className="text-gray-800" />
+        <ChevronRight size={32} />
       </button>
 
-      {/* Navigation Dots */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3">
+      {/* Dots */}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+            className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
               index === currentIndex
-                ? 'bg-white scale-125'
-                : 'bg-white/50 hover:bg-white/80'
+                ? "bg-white scale-110"
+                : "bg-white/50 hover:bg-white/80"
             }`}
           />
         ))}
