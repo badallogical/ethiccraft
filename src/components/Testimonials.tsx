@@ -4,24 +4,24 @@ import { useState, useEffect } from 'react';
 const testimonials = [
   {
     id: 1,
-    text: "UDGAAR has transformed my perspective on community service. Their programs have given me the opportunity to make a real difference.",
-    author: "Rahul Sharma",
-    role: "Student Volunteer",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+    text: "While pursuing my studies, I was trying to know the various secrets associated with a happy and satisfied life. I got answers to all my queries after getting a meeting with the members of Ethiccraft Club. Ethiccraft Rocks!!",
+    author: "Shubhum Sagar",
+    role: "Faculty of Law, Delhi University",
+    image: "https://ethiccraft.org/assets/img/testinomial/t3.jpg"
   },
   {
     id: 2,
-    text: "The dedication and passion of UDGAAR's team in organizing educational programs is truly inspiring. They're making a significant impact.",
-    author: "Priya Patel",
-    role: "College Coordinator",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+    text: "After getting connected with Ethiccraft Club, I feel that my outlook towards life has completely changed. My thoughts have gained clarity and wisdom. I am very thankful to the club for shaping my life.",
+    author: "Shubham Chaudhary",
+    role: "Chemical Engineering, IIT Delhi",
+    image: "https://ethiccraft.org/assets/img/testinomial/T1.PNG"
   },
   {
     id: 3,
-    text: "Being part of UDGAAR's initiatives has been a life-changing experience. Their commitment to social causes is remarkable.",
-    author: "Amit Kumar",
-    role: "Community Leader",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+    text: "I got connected with Ethiccraft Club during my third year of Engineering. Earlier, I would not interact with people much but after getting connected with the club, I started interacting with many people and learnt the art of situation tackling.",
+    author: "Muskan Verma",
+    role: "Information Technology, RKGIT",
+    image: "https://ethiccraft.org/assets/img/testinomial/t2.jpg"
   },
 ];
 

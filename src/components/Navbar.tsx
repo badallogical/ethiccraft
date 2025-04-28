@@ -20,10 +20,15 @@ const Navbar = ({ activeTab, onTabChange }: NavbarProps) => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             {/* Logo */}
+            <img 
+          src="https://ethiccraft.org/assets/img/navmenu/Ethicraft-logo.png" 
+          alt="Ethiccraft Logo" 
+          className="h-24 w-24 object-contain" 
+        />
           {/* Logo */}
-          <span className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-black to-black">
+          {/* <span className="text-1xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-black to-black">
             Ethiccraft
-          </span>
+          </span> */}
           </div>
           
           {/* Desktop Menu */}

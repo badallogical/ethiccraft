@@ -7,28 +7,28 @@ const phases = [
     title: "Values Awareness",
     description: "Putting the seed of values in the life of the students by kindling interest in the values through life changing and basic value based seminars.",
     icon: CheckCircle,
-    image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    image: "https://th.bing.com/th/id/OIP.XZuhJ3-H3ag2cdQCMMkfNQHaE7?rs=1&pid=ImgDetMain"
   },
   {
     id: 2,
     title: "Values Education",
     description: "Once the interest is awakened, initialization of values in the life of the individual become the utmost need.",
     icon: Brain,
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    image: "https://th.bing.com/th/id/R.ded73c5ef98698d5c7edba2850fd7a12?rik=WXSHploXI7Tukg&riu=http%3a%2f%2fiskconbrampton.com%2fwp-content%2fuploads%2f2020%2f02%2f48546903602_7c1859d25c_c-768x534.jpg&ehk=ZgUgAATm1yU0J9H0Qi0D8CFyJu6%2f%2b48J56laMEPDwN4%3d&risl=&pid=ImgRaw&r=0"
   },
   {
     id: 3,
     title: "Values Cultivation",
     description: "After the seed of values is sown and heart becomes fertile through knowledge transmission, the background is set for deeper understanding and practice.",
     icon: Users,
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    image: "https://iskconforyouth.org/wp-content/uploads/2024/12/5-1536x864.jpg"
   },
   {
     id: 4,
     title: "Values in Action",
     description: "While being empowered by necessary values in one's life, youth becomes inspired to distribute the values for the benefit of others.",
     icon: Heart,
-    image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    image: "https://workdaymagazine.org/wp-content/uploads/2016/04/20160404carpenters1.jpg"
   }
 ];
 

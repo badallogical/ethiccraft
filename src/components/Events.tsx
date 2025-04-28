@@ -3,45 +3,54 @@ import React from 'react';
 const events = [
   {
     id: 1,
-    title: "SwaRaj: A Cultural Pride",
+    title: "Mega Youth Fest : Absolute Truth",
     date: "10 February 2024",
     location: "Auditorium, I.C. Bose University Of S&T",
-    image: "https://images.unsplash.com/photo-1511632765486-a01980e1a18?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    image: "https://res.cloudinary.com/dwzmsvp7f/image/fetch/q_75,f_auto,w_1316/https://media.insider.in/image/upload/c_crop%2Cg_custom/v1666020511/tedifpyybkwnp1bc9zl6.jpg"
   },
+  
   {
     id: 2,
-    title: "Kalaanjali Fest 2023: Mime Act",
+    title: "Jagran Youth Fest",
     date: "21st October 2023",
     location: "India Gate, Delhi",
-    image: "https://images.unsplash.com/photo-1526976668912-1a811878dd37?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    image: "https://media.insider.in/image/upload/c_crop,g_custom/v1686934415/onlj7jlxobilt6eqtbox.png"
   },
   {
     id: 3,
-    title: "Udgaar - Mega Youth Fest 2023",
-    date: "20th October 2023",
-    location: "Gurukulum Hills, Uttar Pradesh, INDIA",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    title: "Xpression Fest 2023: Mime Act",
+    date: "21st October 2023",
+    location: "India Gate, Delhi",
+    image: "https://iskconkanpur.com/wp-content/uploads/2023/02/WhatsApp-Image-2023-01-20-at-8.17.22-PM-1024x818.jpeg"
   },
   {
     id: 4,
-    title: "ETHICRAFT CLUB LAUNCH AT DME",
-    date: "31 OCTOBER 2019",
-    location: "DME Campus",
-    image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    title: "Udgaar - Mega Youth Fest 2023",
+    date: "20th October 2023",
+    location: "Gurukulum Hills, Uttar Pradesh, INDIA",
+    image: "https://harisolution.com/wp-content/uploads/2017/01/1920-770x367.jpg"
   },
   {
     id: 5,
-    title: "GANGA GHATS CLEANING & FESTIVAL OF UNITY",
-    date: "20th OCTOBER 2019",
-    location: "Ganga Ghats",
-    image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    title: "ETHICRAFT CLUB LAUNCH AT DME",
+    date: "31 OCTOBER 2019",
+    location: "DME Campus",
+    image: "https://static01.nyt.com/images/2010/10/05/arts/JUMPTREY3/JUMPTREY3-jumbo.jpg"
   },
   {
     id: 6,
-    title: "UDGAAR(An Expression of Goodness & Joy)",
+    title: "BOAT FESTIVAL OF UNITY",
+    date: "20th OCTOBER 2019",
+    location: "Ganga Ghats",
+    image: "https://www.iskcondelhi.com/wp-content/uploads/2022/05/Boat-Festival-2023.jpeg"
+  },
+  
+  {
+    id: 7,
+    title: "UMANG (An Expression of Goodness & Joy)",
     date: "5th OCTOBER 2019",
     location: "Auditorium",
-    image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    image: "https://i.ytimg.com/vi/x17Ok2hH9Jo/maxresdefault.jpg"
   },
   // Add more events as needed
 ];
