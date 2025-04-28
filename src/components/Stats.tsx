@@ -84,6 +84,7 @@
 // };
 import React, { useState, useEffect, useRef } from 'react';
 import { Users, Calendar, School, Heart } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const stats = [
   { id: 1, label: 'Members', value: 7500, suffix: '+', icon: Users },
@@ -97,6 +98,7 @@ const Stats = () => {
   const [counts, setCounts] = useState(stats.map(() => 0));
   const sectionRef = useRef(null);
   const hasAnimated = useRef(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -246,11 +248,13 @@ const Stats = () => {
             transitionDelay: '600ms'
           }}
         >
-          <button className="relative overflow-hidden group bg-white text-emerald-700 px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:shadow-lg hover:shadow-white/20">
+          <button className="relative overflow-hidden group bg-white text-emerald-700 px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:shadow-lg hover:shadow-white/20"  onClick={() => navigate('/join')} >
             <span className="relative z-10">Join Our Community</span>
             <span className="absolute inset-0 bg-emerald-50 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
           </button>
-          <button className="relative overflow-hidden group bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:shadow-lg hover:shadow-white/20">
+          <button className="relative overflow-hidden group bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all hover:shadow-lg hover:shadow-white/20"
+          onClick={() => navigate('/about')}
+          >
             <span className="relative z-10">Support Our Mission</span>
             <span className="absolute inset-0 bg-white/10 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
           </button>

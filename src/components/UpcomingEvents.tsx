@@ -83,9 +83,9 @@ const UpcomingEvents = () => {
                 <h3 className="text-xl font-semibold mb-2">{event.title}</h3>
                 <p className="text-emerald-600 mb-2">{event.date}</p>
                 <p className="text-gray-600">{event.description}</p>
-                <button className="mt-4 w-full bg-emerald-600 text-white py-2 rounded-full hover:bg-emerald-700">
+                {/* <button className="mt-4 w-full bg-emerald-600 text-white py-2 rounded-full hover:bg-emerald-700">
                   Learn More
-                </button>
+                </button> */}
               </div>
             </div>
           ))}

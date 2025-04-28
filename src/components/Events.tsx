@@ -87,11 +87,11 @@ const Events = () => {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <button className="bg-emerald-600 text-white px-8 py-3 rounded-full hover:bg-emerald-700 transition-colors">
             Load More Events
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

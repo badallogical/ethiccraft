@@ -1,5 +1,6 @@
 import React from "react";
 import { Users, BookOpen, Target, Award, Heart } from "lucide-react";
+import { useNavigate } from 'react-router-dom';
 
 const AboutUs = () => {
   // Team members data
@@ -54,6 +55,8 @@ const AboutUs = () => {
     }
   ];
 
+  const navigate = useNavigate();
+
   return (
     <div className="bg-gradient-to-b from-white to-gray-50">
       {/* Hero Section */}
@@ -66,10 +69,13 @@ const AboutUs = () => {
                 A community dedicated to fostering positive values, personal growth, and responsible citizenship through structured mentorship and ethical initiatives.
               </p>
               <div className="flex space-x-4">
-                <button className="bg-white text-emerald-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">
+                <button className="bg-white text-emerald-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition"
+                onClick={() => navigate('/join')}
+                >
                   Join Our Community
                 </button>
-                <button className="border border-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-600 transition">
+                <button className="border border-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-600 transition"
+                onClick={() => navigate('/about')}>
                   Learn More
                 </button>
               </div>
@@ -224,10 +230,12 @@ const AboutUs = () => {
             Be part of a movement that's creating positive change through ethical values and meaningful connections.
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-            <button className="bg-white text-emerald-700 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition">
+            <button className="bg-white text-emerald-700 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition"
+            onClick={() => navigate('/join')}>
               Sign Up Today
             </button>
-            <button className="border border-white px-8 py-3 rounded-lg font-medium hover:bg-emerald-600 transition">
+            <button className="border border-white px-8 py-3 rounded-lg font-medium hover:bg-emerald-600 transition"
+            onClick={() => navigate('/contact')}>
               Contact Us
             </button>
           </div>

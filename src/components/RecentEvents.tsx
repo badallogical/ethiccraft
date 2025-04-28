@@ -61,6 +61,7 @@
 // export default RecentEvents;
 import React, { useState, useRef, useEffect } from 'react';
 import { ChevronRight, ChevronLeft, ExternalLink } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 // Define the Event type
 interface Event {
@@ -122,6 +123,7 @@ const recentEvents: Event[] = [
     category: "Arts"
   }
 ];
+
 
 const RecentEvents: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -188,6 +190,8 @@ const RecentEvents: React.FC = () => {
       scrollContainerRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
   };
+
+  const navigate = useNavigate();
 
   return (
     <section
@@ -277,7 +281,8 @@ const RecentEvents: React.FC = () => {
 
         {/* View All Events Button */}
         <div className="text-center mt-12">
-          <button className="bg-emerald-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-emerald-700 transition flex items-center gap-2 mx-auto">
+          <button className="bg-emerald-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-emerald-700 transition flex items-center gap-2 mx-auto"
+          onClick={() => navigate('/events')} >
             View All Events
             <ExternalLink size={18} />
           </button>
@@ -300,6 +305,7 @@ interface EventCardProps {
 }
 
 const EventCard: React.FC<EventCardProps> = ({ event, isHovered }) => (
+  
   <div className="group relative overflow-hidden rounded-lg shadow-lg h-full bg-white">
     <div className="relative h-48 overflow-hidden">
       <img
@@ -320,7 +326,10 @@ const EventCard: React.FC<EventCardProps> = ({ event, isHovered }) => (
       <h3 className="text-xl font-bold mb-2 line-clamp-2">{event.title}</h3>
       <p className="text-gray-600 text-sm mb-4 line-clamp-2">{event.description}</p>
 
-      <button className="mt-2 text-emerald-600 font-medium hover:text-emerald-800 transition">
+      <button className="mt-2 text-emerald-600 font-medium hover:text-emerald-800 transition"
+       onClick={() => {
+        const navigate2 = useNavigate()
+        navigate2('/about')}} >
         Learn More
       </button>
     </div>
