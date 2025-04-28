@@ -162,7 +162,7 @@ export default function JoinUsForm() {
           ))}
           <motion.button
             type="submit"
-            className="w-full p-3 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+            className="w-full p-3 bg-emerald-600 text-white rounded-md hover:bg-blue-700"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
           >
