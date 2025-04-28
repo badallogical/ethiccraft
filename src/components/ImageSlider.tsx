@@ -5,8 +5,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight, Play } from "lucide-react";
 
 const images = [
-  "https://ethiccraft.org/assets/img/home-slider/New_Banner.png?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
   "https://ethiccraft.org/assets/img/home-slider/slider1.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "https://ethiccraft.org/assets/img/home-slider/New_Banner.png?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
   "https://ethiccraft.org/assets/img/home-slider/quate.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
 ];
 

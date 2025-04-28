@@ -145,12 +145,13 @@ export default function JoinUsForm() {
             <option value="Other">Other</option>
           </select>
           {errors.gender && <p className="text-red-500 text-sm mt-1">{errors.gender}</p>}
-          {[
-            { name: "address", placeholder: "Address" },
-            { name: "achievements", placeholder: "Achievements" },
-            { name: "hobbies", placeholder: "Hobbies" },
-            { name: "inspiration", placeholder: "Inspiration for Joining Ethicraft Club" },
-          ].map(({ name, placeholder }) => (
+          {
+            [
+              { name: "address", placeholder: "Address" },
+              { name: "achievements", placeholder: "Achievements" },
+              { name: "hobbies", placeholder: "Hobbies" },
+              { name: "inspiration", placeholder: "Inspiration for Joining Ethicraft Club" },
+            ].map(({ name, placeholder }) => (
             <textarea
               key={name}
               name={name}
@@ -159,7 +160,8 @@ export default function JoinUsForm() {
               placeholder={placeholder}
               className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
-          ))}
+            ))
+          }
           <motion.button
             type="submit"
             className="w-full p-3 bg-emerald-600 text-white rounded-md hover:bg-blue-700"
