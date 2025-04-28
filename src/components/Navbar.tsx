@@ -151,6 +151,17 @@ const Navbar = () => {
       isActive ? 'ring-2 ring-emerald-600' : ''
     }`;
 
+    const mobileLinkClasses = ({ isActive }: { isActive: boolean }) =>
+      `block w-full text-left px-3 py-2 text-gray-700 hover:text-emerald-600 ${
+        isActive ? 'text-emerald-600 font-semibold' : ''
+      }`;
+    
+    const mobileJoinButtonClasses = ({ isActive }: { isActive: boolean }) =>
+      `block w-full mt-2 bg-emerald-600 text-white px-6 py-2 rounded-full hover:bg-emerald-700 ${
+        isActive ? 'ring-2 ring-emerald-600' : ''
+      }`;
+    
+
   return (
     <nav className="fixed top-0 w-full bg-white shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -199,53 +210,31 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <NavLink
-                to="/"
-                className={linkClasses}
-                onClick={handleLinkClick}
-              >
-                Home
-              </NavLink>
-              <NavLink
-                to="/about"
-                className={linkClasses}
-                onClick={handleLinkClick}
-              >
-                About Us
-              </NavLink>
-              <NavLink
-                to="/events"
-                className={linkClasses}
-                onClick={handleLinkClick}
-              >
-                Events
-              </NavLink>
-              <NavLink
-                to="/education"
-                className={linkClasses}
-                onClick={handleLinkClick}
-              >
-                Education & Training
-              </NavLink>
-              <NavLink
-                to="/contact"
-                className={linkClasses}
-                onClick={handleLinkClick}
-              >
-                Contact Us
-              </NavLink>
-              <NavLink
-                to="/join"
-                className={joinButtonClasses}
-                onClick={handleLinkClick}
-              >
-                Join Us
-              </NavLink>
-            </div>
-          </div>
-        )}
+  <div className="md:hidden">
+    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      <NavLink to="/" className={mobileLinkClasses} onClick={handleLinkClick}>
+        Home
+      </NavLink>
+      <NavLink to="/about" className={mobileLinkClasses} onClick={handleLinkClick}>
+        About Us
+      </NavLink>
+      <NavLink to="/events" className={mobileLinkClasses} onClick={handleLinkClick}>
+        Events
+      </NavLink>
+      <NavLink to="/education" className={mobileLinkClasses} onClick={handleLinkClick}>
+        Education & Training
+      </NavLink>
+      <NavLink to="/contact" className={mobileLinkClasses} onClick={handleLinkClick}>
+        Contact Us
+      </NavLink>
+      <NavLink to="/join" className={mobileJoinButtonClasses} onClick={handleLinkClick}>
+        Join Us
+      </NavLink>
+    </div>
+  </div>
+)}
+
+
       </div>
     </nav>
   );
