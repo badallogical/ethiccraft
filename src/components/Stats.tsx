@@ -156,9 +156,10 @@ const Stats = () => {
 
   return (
     <section 
-      ref={sectionRef} 
-      className="bg-gradient-to-br from-emerald-700 to-emerald-800 relative overflow-hidden h-[700px] flex items-center"
-    >
+  ref={sectionRef} 
+  className="bg-gradient-to-br from-emerald-700 to-emerald-800 relative overflow-hidden min-h-[600px] py-20 flex items-center"
+>
+
       <div className="absolute inset-0 opacity-10">
         <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
           <defs>
@@ -185,7 +186,7 @@ const Stats = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => {
             const IconComponent = stat.icon;
             return (

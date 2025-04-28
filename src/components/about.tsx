@@ -154,7 +154,7 @@ const AboutUs = () => {
       </div>
 
       {/* Our People Section */}
-      <div className="py-20 bg-gray-50">
+      {/* <div className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Our People</h2>
@@ -186,7 +186,7 @@ const AboutUs = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Core Values Section */}
       <div className="bg-white py-20">
