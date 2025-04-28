@@ -23,7 +23,7 @@ const Navbar = ({ activeTab, onTabChange }: NavbarProps) => {
             <img 
           src="https://ethiccraft.org/assets/img/navmenu/Ethicraft-logo.png" 
           alt="Ethiccraft Logo" 
-          className="h-24 w-24 object-contain" 
+          className="h-20 w-20 object-contain" 
         />
           {/* Logo */}
           {/* <span className="text-1xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-black to-black">
