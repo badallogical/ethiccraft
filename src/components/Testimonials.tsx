@@ -54,12 +54,12 @@ const Testimonials = () => {
           {/* Testimonial Slider */}
           <div className="flex items-center justify-center">
             {/* Navigation Buttons */}
-            <button
+            {/* <button
               onClick={goToPrevious}
               className="absolute left-4 lg:left-10 z-10 p-3 rounded-full bg-emerald-600 text-white hover:bg-emerald-700 transition-colors"
             >
               <ChevronLeft size={24} />
-            </button>
+            </button> */}
 
             {/* Testimonial Content */}
             <div className="flex flex-col md:flex-row items-center max-w-5xl mx-auto px-8 py-10 bg-gray-50 rounded-xl shadow-md">
@@ -86,12 +86,12 @@ const Testimonials = () => {
               </div>
             </div>
 
-            <button
+            {/* <button
               onClick={goToNext}
               className="absolute right-4 lg:right-10 z-10 p-3 rounded-full bg-emerald-600 text-white hover:bg-emerald-700 transition-colors"
             >
               <ChevronRight size={24} />
-            </button>
+            </button> */}
           </div>
 
           {/* Navigation Dots */}
